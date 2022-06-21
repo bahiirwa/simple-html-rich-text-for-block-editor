@@ -3,7 +3,7 @@
  * Plugin Name:       Simple HTML Rich Text for Block Editor
  * Plugin URI:        https://wordpress.org/plugins/simple-html-rich-text-for-block-editor/
  * Description:       Add semantic HTML for rich text such as Subscript, SuperScript, Cite, Small, Marked, Inserted and Deleted in the Block Editor.
- * Version:           1.2.0
+ * Version:           1.2.1
  * Author:            Laurence Bahiirwa
  * Author URI:        https://omukiguy.com
  * License:           GPLv2 or later
