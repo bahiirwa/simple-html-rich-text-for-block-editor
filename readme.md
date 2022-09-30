@@ -1,5 +1,10 @@
 # Simple HTML Rich Text for Block Editor
 
+![WordPress Plugin Active Installs](https://img.shields.io/wordpress/plugin/installs/simple-html-rich-text-for-block-editor)
+![WordPress Plugin Version](https://img.shields.io/wordpress/plugin/v/simple-html-rich-text-for-block-editor)
+![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/rating/simple-html-rich-text-for-block-editor)
+![WordPress Plugin Last Updated](https://img.shields.io/wordpress/plugin/last-updated/simple-html-rich-text-for-block-editor)
+
 Add semantic HTML for rich text such as Subscript, SuperScript, Cite, Small, Marked, Inserted and Deleted in the new Block Editor.
 
 Tested up to: WP 6.0
