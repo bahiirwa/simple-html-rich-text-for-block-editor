@@ -30,7 +30,7 @@ add_action(
 				'pre-publish-plugin-script',
 				plugin_dir_url( __FILE__ ) . 'build/index.js',
 				$assets['dependencies'],
-				filemtime( dirname( __FILE__ ) . '/build/index.js' ),
+				$assets['version'],
 				true
 			);
 		}

@@ -55,9 +55,12 @@ Contributions like feedback can be through the forum. You can also write an issu
 
 ## Changelog
 
-### 1.3.0
-* Cleanup the bundle to remove block inclusion popup
 ### 1.3.2
+* Fix: Broken link to file version.
+
+### 1.3.1
+* Cleanup the bundle to remove block inclusion popup
+### 1.3.0
 * Test for 6.2.0.
 * Fix: Add new build process.
 * Remove: Core subscript and superscript formats.
