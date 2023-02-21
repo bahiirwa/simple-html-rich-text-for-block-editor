@@ -19,11 +19,20 @@ defined( 'ABSPATH' ) || die( 'No Access!' );
 
 /**
  * Registers new block types scripts.
- *
- * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function simple_html_rich_text_for_block_editor_scripts_init() {
-	register_block_type( __DIR__ . '/build' );
-}
-
-add_action( 'init', 'simple_html_rich_text_for_block_editor_scripts_init' );
+add_action(
+	'enqueue_block_editor_assets',
+	function() {
+		$asset_file_path = plugin_dir_path( __FILE__ ) . 'build/index.asset.php';
+		if ( file_exists( $asset_file_path ) ) {
+			$assets = require_once $asset_file_path;
+			wp_enqueue_script(
+				'pre-publish-plugin-script',
+				plugin_dir_url( __FILE__ ) . 'build/index.js',
+				$assets['dependencies'],
+				filemtime( dirname( __FILE__ ) . 'build/index.js' ),
+				true
+			);
+		}
+	}
+);

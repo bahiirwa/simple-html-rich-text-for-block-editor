@@ -1,7 +1,7 @@
 /**
  * Internal dependencies
 */
-import { registerFormatType, toggleFormat, unregisterFormatType } from '@wordpress/rich-text';
+import { registerFormatType, toggleFormat } from '@wordpress/rich-text';
 import { RichTextToolbarButton } from '@wordpress/block-editor';
 
 const buttons = [
