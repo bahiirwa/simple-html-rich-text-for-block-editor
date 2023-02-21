@@ -2,7 +2,12 @@
 /.git
 /.github
 /node_modules
+/src
 
 .distignore
 .gitignore
+.gitattributes
+.editorconfig
 readme.md
+package.json
+package-lock.json
