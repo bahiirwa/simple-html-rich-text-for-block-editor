@@ -9,7 +9,7 @@ Add Semantic HTML Markup to texts such as Cite, Small, Marked, Inserted and Dele
 
 Tested up to: WP 6.2.0
 Requires PHP: 5.6
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,7 +57,7 @@ Contributions like feedback can be through the forum. You can also write an issu
 
 ### 1.3.0
 * Cleanup the bundle to remove block inclusion popup
-### 1.3.1
+### 1.3.2
 * Test for 6.2.0.
 * Fix: Add new build process.
 * Remove: Core subscript and superscript formats.

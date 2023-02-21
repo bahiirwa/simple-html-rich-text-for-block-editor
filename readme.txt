@@ -5,7 +5,7 @@ Tags: Rich text, Gutenberg, Block Editor, formatting, Subscript
 Requires at least: 5.4
 Tested up to: 6.0
 Requires PHP: 5.6
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,6 +46,9 @@ Contributions like feedback can be through the forum. You can also write an issu
 1. Front-end view of the tools being used
 
 == Changelog ==
+
+= 1.3.2 =
+* Fix: Broken link to file version.
 
 = 1.3.1 =
 * Cleanup the bundle to remove block inclusion popup.
