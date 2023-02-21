@@ -11,3 +11,4 @@
 readme.md
 package.json
 package-lock.json
+phpcs.xml
