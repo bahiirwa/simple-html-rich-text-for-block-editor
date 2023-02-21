@@ -1,36 +1,27 @@
 <?php
 /**
- * Plugin Name:       Simple HTML Rich Text for Block Editor
+ * Plugin Name:       Simple HTML RichText for Block Editor
  * Plugin URI:        https://wordpress.org/plugins/simple-html-rich-text-for-block-editor/
- * Description:       Add semantic HTML for rich text such as Subscript, SuperScript, Cite, Small, Marked, Inserted and Deleted in the Block Editor.
- * Version:           1.2.1
+ * Description:       Add Semantic HTML Markup to texts such as Cite, Small, Marked, Inserted and Deleted in the Block Editor.
+ * Version:           1.3.0
  * Author:            Laurence Bahiirwa
  * Author URI:        https://omukiguy.com
  * License:           GPLv2 or later
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
- * Requires at least: 5.0
- * Tested up to:      6.0
- * 
-*/
+ * Requires at least: 6.0
+ * Tested up to:      6.2.0
+ */
 
 // If this file is called firectly, abort!!!
 defined( 'ABSPATH' ) || die( 'No Access!' );
 
-// Add functionality to the Block Editor.
-add_action( 'enqueue_block_editor_assets', function() {
-	wp_enqueue_script(
-		'simple-html-rich-text',
-		plugins_url( 'dist/index.js', __FILE__ ),
-		array(
-			'wp-element',
-			'wp-rich-text',
-			'wp-format-library',
-			'wp-i18n',
-			'wp-editor',
-			'wp-compose',
-			'wp-components',
-		),
-		filemtime( dirname( __FILE__ ) . '/dist/index.js' ),
-		true
-	);
-} );
+/**
+ * Registers new block types scripts.
+ *
+ * @see https://developer.wordpress.org/reference/functions/register_block_type/
+ */
+function simple_html_rich_text_for_block_editor_scripts_init() {
+	register_block_type( __DIR__ . '/build' );
+}
+
+add_action( 'init', 'simple_html_rich_text_for_block_editor_scripts_init' );
