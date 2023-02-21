@@ -1,2 +1,12 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+/.wordpress-org
+/.git
+/.github
+/node_modules
+/src
+
+.distignore
+.gitignore
+readme.md
+package.json
+package-lock.json
+phpcs.xml
